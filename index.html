@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="icon" href="#.png">
+	<link rel="stylesheet" href="#.css"/>
+	<script src="#/#.js"></script>
+
+
+
+<style>
+
+/*general styles*/
+body{padding: 3em;background-color: red;}
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/*slideshow styles*/
+.slideshow {
+	width: 50%;
+	height: 8em;
+	margin: 0 auto;
+	overflow: hidden;
+	border: solid 1px white;
+}
+.slideshow-container {
+	width: 2500px;
+	font-size: 0;
+	transition: 1s ease;
+	height: 225px;
+}
+.slideshow-container:hover {
+	animation-play-state: paused;
+}
+.slide {
+animation: slide 5s ease infinite;
+}
+@keyframes slide {
+	0% {
+	transform: translateX(0%);
+	}
+	12.5% {
+	transform: translateX(0%);
+	}
+	25% {
+	transform: translateX(-25%);
+	}
+	37.5% {
+	transform: translateX(-25%);
+	}
+	50% {
+	transform: translateX(-50%);
+	}
+	62.5% {
+	transform: translateX(-50%);
+	}
+	75% {
+	transform: translateX(-75%);
+	}
+	87.5% {
+	transform: translateX(-75%);
+	}
+	99% {
+	transform: translateX(-75%);
+	}
+	100% {
+	transform: translateX(0);
+	}
+}
+</style>
+
+
+</head>
+<body>
+	
+<p>Slideshow automático sem Javascript</p>
+<p>FOSS</p>
+
+
+<!--hovering over the images will pause the slideshow -->
+<section class="slideshow">
+	<div class="slideshow-container slide">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/120px-Firefox_logo%2C_2019.svg.png"/>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/VLC_Icon.svg/64px-VLC_Icon.svg.png"/>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/LibreOffice_7.5_Writer_Icon.png/120px-LibreOffice_7.5_Writer_Icon.png"/>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/The_GIMP_icon_-_gnome.svg/120px-The_GIMP_icon_-_gnome.svg.png"/>
+	</div>
+</section>
+
+
+
+</body>
+</html>
